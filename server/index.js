@@ -19,14 +19,16 @@ import paymentRoute from "./routes/payment.routes.js";
 connectDB();
 const app = express();
 
-const PORT = 8080; // Changed to port 8080 to avoid conflicts with commonly used ports
+const PORT = process.env.PORT || 8080; // Using environment variable for Render deployment
 
 // default middleware
 app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin:["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
+    origin: process.env.NODE_ENV === "production" 
+        ? [process.env.FRONTEND_URL, "https://lms-patel-mern-stack.vercel.app"] 
+        : ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
     credentials:true
 }));
  
