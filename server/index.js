@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 app.use(cors({
     origin: process.env.NODE_ENV === "production" 
-        ? [process.env.FRONTEND_URL, "https://lms-patel-mern-stack.vercel.app"] 
+        ? [process.env.FRONTEND_URL, "https://lmsapp-mern.vercel.app"] 
         : ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
     credentials:true
 }));
