@@ -25,11 +25,10 @@ const PORT = process.env.PORT || 8080; // Using environment variable for Render 
 app.use(express.json());
 app.use(cookieParser());
 
+// More permissive CORS configuration for debugging
 app.use(cors({
-    origin: process.env.NODE_ENV === "production" 
-        ? [process.env.FRONTEND_URL, "https://lmsapp-mern.vercel.app"] 
-        : ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
-    credentials:true
+    origin: true, // Allow all origins temporarily
+    credentials: true
 }));
  
 // apis

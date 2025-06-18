@@ -1,10 +1,10 @@
 // API configuration for development and production environments
 const isDevelopment = import.meta.env.MODE === 'development';
 
-// Base URL for the backend API
+// Base URL for the backend API - hardcoded for production to fix CORS issues
 export const BASE_API_URL = isDevelopment 
   ? 'http://localhost:8080/api/v1' 
-  : import.meta.env.VITE_API_URL || 'https://lmsapp-mern.onrender.com/api/v1';
+  : 'https://lmsapp-mern.onrender.com/api/v1';
 
 // API endpoints
 export const USER_API = `${BASE_API_URL}/user/`;
