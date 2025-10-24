@@ -44,7 +44,7 @@ This document provides instructions for deploying the LMS application with the b
 3. **Environment Variables**:
    Configure the following environment variable on Vercel:
    ```
-   VITE_API_URL=https://lms-patel-mern-stack.onrender.com/api/v1
+   VITE_API_URL=https://-mern-stack.onrender.com/api/v1
    ```
 
 ## Post Deployment
