@@ -7,7 +7,7 @@ This document provides instructions for deploying the LMS application with the b
 1. **Create a new Web Service on Render**:
    - Connect your GitHub repository
    - Use the following settings:
-     - **Name**: `lms-patel-mern-stack`
+     - **Name**: `-mern-stack`
      - **Root Directory**: `lms_patelmernstack-main/server`
      - **Runtime Environment**: Node
      - **Build Command**: `npm install`
@@ -18,7 +18,7 @@ This document provides instructions for deploying the LMS application with the b
    ```
    NODE_ENV=production
    PORT=10000 (Render will automatically assign a port, but you can specify one)
-   FRONTEND_URL=https://lms-patel-mern-stack.vercel.app
+   FRONTEND_URL=https://mern-stack.vercel.app
    MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret
    CLOUDINARY_CLOUD_NAME=your_cloudinary_name
@@ -38,7 +38,6 @@ This document provides instructions for deploying the LMS application with the b
    - Connect your GitHub repository
    - Use the following settings:
      - **Framework Preset**: Vite
-     - **Root Directory**: `lms_patelmernstack-main/client`
      - **Build Command**: `npm run build` (should be automatic)
      - **Output Directory**: `dist` (should be automatic)
 
