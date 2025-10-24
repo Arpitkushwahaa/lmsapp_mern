@@ -8,7 +8,7 @@ This document provides instructions for deploying the LMS application with the b
    - Connect your GitHub repository
    - Use the following settings:
      - **Name**: `-mern-stack`
-     - **Root Directory**: `lms_patelmernstack-main/server`
+     - **Root Directory**: `mernstack-main/server`
      - **Runtime Environment**: Node
      - **Build Command**: `npm install`
      - **Start Command**: `node index.js`
